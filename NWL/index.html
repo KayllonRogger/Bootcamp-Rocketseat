@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kayllon Nunes - DoWhile 2021 </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+        <div class="container">
+            <div class="avatar">
+                <span>
+                    <img src="../images/build.png" alt="Selo Rocketseat">
+                </span>
+                <img src="../images/1560966990572.jpg" width="185px" height="185px" alt="Foto Pessoal">
+            </div>
+            <h1>Kayllon Nunes</h1>
+            <a href="https://github.com/KayllonRogger" target="_blank"><img src="../images/github 2.png" alt="Icone Github"> kayllonrogger</a>
+
+            <p>An instructor focused on helping people start programming for web</p>
+
+            <ul id="socialLinks">
+                <li id="facebook"><a href="https://facebook.com/kayllonrogger" target="_blank"><img src="../images/facebook.png" alt="Icone facebook"></a></li>
+                <li id="instagram"><a href="https://Instagram.com/kayllonrogger" target="_blank"><img src="../images/Instagram.png" alt="Icone Instagram"></a></li>
+                <li id="twitter"><a href="https://twitter.com/kayllonrogger" target="_blank"><img src="../images/twitter.png" alt="Icone twitter"></a></li>
+                <li id="youtube"><a href="https://www.youtube.com/channel/UCTMPFrF8xQr8l-tUAnV-x5A" target="_blank""><img src="../images/youtube.png" alt="Icone youtube"></a></li>
+            </ul>
+        </div>
+        </main>
+
+        <script>
+            const LinkSocialMedia = {
+                github:'KayllonRogger',
+                youtube:'channel/UCTMPFrF8xQr8l-tUAnV-x5A',
+                facebook:'kayllonrogger',
+                instagram:'kayllonrogger',
+                twitter:'kayllonrogger'
+            }
+
+            function changeSocialMediaLinks(){
+                for(let li of socialLinks.children){
+                    const social = li.getAttribute('class')
+
+                    li.children[0].href = `https://${social}.com/${LinksSocialMedia[social]}`
+                }
+            }
+
+            changeSocialMediaLinks()
+        </script>
+    </body>
+</html>
